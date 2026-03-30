@@ -49,7 +49,17 @@
             button4 = new Button();
             pictureBox1 = new PictureBox();
             dateTimePicker1 = new DateTimePicker();
+            checkBox1 = new CheckBox();
+            groupBox1 = new GroupBox();
+            checkBox2 = new CheckBox();
+            checkBox3 = new CheckBox();
+            radioButton1 = new RadioButton();
+            radioButton2 = new RadioButton();
+            panel1 = new Panel();
+            richTextBox1 = new RichTextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            groupBox1.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // comboBox1
@@ -218,7 +228,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(120, 469);
+            pictureBox1.Location = new Point(726, 378);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(125, 62);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -227,10 +237,92 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(61, 566);
+            dateTimePicker1.Location = new Point(652, 487);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(250, 32);
             dateTimePicker1.TabIndex = 19;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(6, 43);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(109, 28);
+            checkBox1.TabIndex = 20;
+            checkBox1.Text = "Mayonez";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(checkBox3);
+            groupBox1.Controls.Add(checkBox2);
+            groupBox1.Controls.Add(checkBox1);
+            groupBox1.Location = new Point(12, 435);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(152, 212);
+            groupBox1.TabIndex = 21;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Baharatlar";
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Location = new Point(6, 111);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(88, 28);
+            checkBox2.TabIndex = 21;
+            checkBox2.Text = "Hardal";
+            checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            checkBox3.AutoSize = true;
+            checkBox3.Location = new Point(6, 77);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(91, 28);
+            checkBox3.TabIndex = 22;
+            checkBox3.Text = "Ketçap";
+            checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Location = new Point(76, 26);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(80, 28);
+            radioButton1.TabIndex = 22;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "Kadın";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Location = new Point(75, 60);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(79, 28);
+            radioButton2.TabIndex = 23;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "Erkek";
+            radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(255, 255, 192);
+            panel1.Controls.Add(radioButton1);
+            panel1.Controls.Add(radioButton2);
+            panel1.Location = new Point(198, 485);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(250, 125);
+            panel1.TabIndex = 24;
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.Location = new Point(496, 512);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(125, 120);
+            richTextBox1.TabIndex = 25;
+            richTextBox1.Text = "";
             // 
             // Form1
             // 
@@ -238,6 +330,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(192, 255, 192);
             ClientSize = new Size(1100, 704);
+            Controls.Add(richTextBox1);
+            Controls.Add(panel1);
+            Controls.Add(groupBox1);
             Controls.Add(dateTimePicker1);
             Controls.Add(pictureBox1);
             Controls.Add(button4);
@@ -264,6 +359,10 @@
             Text = "Araç Kullanımları";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -290,5 +389,13 @@
         private Button button4;
         private PictureBox pictureBox1;
         private DateTimePicker dateTimePicker1;
+        private CheckBox checkBox1;
+        private GroupBox groupBox1;
+        private CheckBox checkBox3;
+        private CheckBox checkBox2;
+        private RadioButton radioButton1;
+        private RadioButton radioButton2;
+        private Panel panel1;
+        private RichTextBox richTextBox1;
     }
 }
