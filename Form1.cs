@@ -31,5 +31,20 @@ namespace Araç_Kullanimlari2
         {
             listBox1.Items.Add("Yazar");
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Add(textBox2.Text);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            listBox2.Items.Add(maskedTextBox1.Text +" "+ maskedTextBox2.Text +" "+ maskedTextBox3.Text);
+        }
     }
 }
